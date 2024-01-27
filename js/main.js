@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     createSquares();
+
+    const keys = document.querySelectorAll('keyboard-row button')
+
+    for (let inde)
     function createSquares() {
         const gameBoard = document.getElementById("board");
 
@@ -10,4 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
             gameBoard.appendChild(square);
         }
     }
+
+
 });
