@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const availableSpaceEl = document.getElementById(String(availableSpace));
     
           availableSpace = availableSpace + 1;
-          availableSpaceEl.textContent = letter;
+          availableSpaceEl.textContent = letter.toUpperCase();
         }
       }
     
@@ -65,14 +65,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const isCorrectLetter = word.includes(letter);
     
         if (!isCorrectLetter) {
-          return "rgb(188, 192, 194)";
+            return "#787c7e";
         }
     
         const letterInThatPosition = word.charAt(index);
         const isCorrectPosition = letter === letterInThatPosition;
     
         if (isCorrectPosition) {
-          return "rgb(83, 141, 78)";
+          return "#6aaa64";
         }
     
         return "#c9b458";

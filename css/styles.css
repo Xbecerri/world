@@ -48,7 +48,7 @@ header {
 .square {
     border: 2px solid #d3d3d3;
     min-width: 60px;
-    min-height: 60px;
+    min-height: 80px;
     font-size: 50px;
     font-weight: bold;
     color: #d3d3d3;
@@ -74,15 +74,16 @@ header {
     font-weight: bold;
     border: 1px solid #d3d3d3;
     padding: 0;
-    height: 58px;
+    height: 60px;
     cursor: pointer;
-    background-color: #e0e0e0;
-    color: #333333;
+    background-color: #d3d6da;
+    color: black;
     flex-grow: 1;
     text-transform: uppercase;
     margin-right: 6px;
     border-radius: 4px;
     user-select: none;
+    font-size: 20px ;
 }
 
 .keyboard-row button.wide-button {
