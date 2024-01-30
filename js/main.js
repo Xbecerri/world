@@ -170,5 +170,8 @@ document.addEventListener("DOMContentLoaded", () => {
           updateGuessedWords(letter);
         };
       }
+      document.getElementById('reloadButton').addEventListener('click', function() {
+        window.location.reload();
+    });
     });
     
