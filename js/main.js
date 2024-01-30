@@ -109,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     const letterEl = document.getElementById(letterId);
                     letterEl.classList.add("animate__flipInX");
                     letterEl.style = `background-color:${tileColor};border-color:${tileColor}`;
+                    letterEl.style.color = 'white';
                 }, interval * index);
                 })
             
