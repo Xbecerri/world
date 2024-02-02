@@ -173,5 +173,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById('reloadButton').addEventListener('click', function() {
         window.location.reload();
     });
+    document.getElementById('word').addEventListener('click', function() {
+        window.alert(`The word was ${word}`);
+    });
     });
     

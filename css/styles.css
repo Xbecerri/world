@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,123 +5,26 @@
 
 html, body {
     height: 100%;
+    /* width: 100%; */
     font-family: 'Helvetica Neue', sans-serif;
-    background-color: #f5f5f7;
-}
-
-#container {
-    display: flex;
-    background-color: #f5f5f7;
-    height: 100%;
-    align-items: center;
-    flex-direction: column;
-}
-
-header {
-    border-bottom: 1px solid #d3d3d3;
-}
-
-.title {
-    color: #333333;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0.4rem 0;
-    text-align: center;
-}
-
-#board-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-
-#board {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.square {
-    border: 2px solid #d3d3d3;
-    min-width: 60px;
-    min-height: 80px;
-    font-size: 50px;
-    font-weight: bold;
-    color: #d3d3d3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: white;
 }
 
-#keyboard-container {
-    height: 200px;
-}
-
-.keyboard-row {
+#container, #game {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: auto 0 8px;
-}
-
-.keyboard-row button {
-    font-family: inherit;
-    font-weight: bold;
-    border: 1px solid #d3d3d3;
-    padding: 0;
-    height: 60px;
-    cursor: pointer;
-    background-color: #d3d6da;
-    color: black;
-    flex-grow: 1;
-    text-transform: uppercase;
-    margin-right: 6px;
-    border-radius: 4px;
-    user-select: none;
-    font-size: 20px ;
-}
-
-.keyboard-row button.wide-button {
-    flex-grow: 1.5;
-}
-
-.spacer-half {
-    flex-grow: 0.5;
-}
-
-#game {
-    width: 100%;
-    max-width: 500px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
- * {
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #f5f5f7;
-}
-
-#container {
-    display: flex;
-    background-color: #f5f5f7;
+    background-color: white;
     height: 100%;
     align-items: center;
     flex-direction: column;
-    color: #333333;
+    width: 100%;
 }
 
 header {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
     border-bottom: 1px solid #d3d3d3;
 }
 
@@ -132,9 +34,11 @@ header {
     font-weight: bold;
     margin: 0.4rem 0;
     text-align: center;
+    width: 100%;
+    padding-left: 100px;
 }
 
-#board-container {
+#board-container, #board {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,13 +68,14 @@ header {
 
 #keyboard-container {
     height: 200px;
+    flex-shrink: 0;
 }
 
 .keyboard-row {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: auto 0 8px;
+    margin-bottom: 8px;
 }
 
 .keyboard-row button {
@@ -180,64 +85,53 @@ header {
     padding: 0;
     height: 58px;
     cursor: pointer;
-    background-color: #e0e0e0;
-    color: #333333;
+    background-color: #cbcbcf;
     flex-grow: 1;
     text-transform: uppercase;
     margin-right: 6px;
     border-radius: 4px;
     user-select: none;
+    font-size: 20px;
+    width: 35px;
+
 }
 
 .keyboard-row button.wide-button {
-    flex-grow: 1.5;
+    flex-grow: 2.5;
+    width: 75px;
+    font-size: 12px !important;
 }
 
 .spacer-half {
-    flex-grow: 0.5;
-}
-
-#game {
-    width: 100%;
-    max-width: 500px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.white-text { color: white; }
-
-header {
-    border-bottom: 1px solid #d3d3d3;
-    display: flex; /* Make header a flex container */
-    justify-content: space-between; /* Space between the title and the button */
-    align-items: center; /* Align items vertically */
-    padding: 0 20px; /* Add some padding on the left and right */
-}
-
-.title {
-    color: #333333;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0.4rem 0;
+    flex-grow: 1.5;
 }
 
 .reload-icon {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 24px; /* Adjust size as needed */
+    font-size: 34px;
     padding: 5px;
     border-radius: 50%;
     transition: transform 0.3s;
+    padding-right: 25px ;
+    background-color: white;
 }
 
 .reload-icon:hover {
     transform: rotate(360deg);
 }
 
-#reloadButton{
-    background-color: #f5f5f7;
-    ;
+#reloadButton {
+    background-color: white;
+}
+
+#word {
+    margin-right: 15px;
+    font-size: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 7px;
+    background-color: #B7D1E2;
+
 }
