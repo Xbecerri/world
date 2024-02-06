@@ -156,7 +156,7 @@ header {
         width: 12%; /* Assuming you have 8 squares in a row, adjust as needed */
         height: 0; /* Used to maintain the aspect ratio */
         padding-bottom: 12%; /* Same as width to maintain the square aspect ratio */
-        font-size: 3vw; /* Scales the text within the squares */
+        font-size: 10vw; /* Scales the text within the squares */
     }
 
     .keyboard-row button {
