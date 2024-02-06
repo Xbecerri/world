@@ -160,7 +160,7 @@ header {
     }
 
     .keyboard-row button {
-        width: 15%; /* Assuming there are 10 buttons in a row, adjust as needed */
+        width: 35%; /* Assuming there are 10 buttons in a row, adjust as needed */
         height: auto; /* Scales the height automatically based on the width */
         padding: 1vw; /* Provides padding that scales with the viewport width */
         font-size: 3vw; /* Scales the button text based on viewport width */
