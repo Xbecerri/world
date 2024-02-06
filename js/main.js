@@ -175,6 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.getElementById('word').addEventListener('click', function() {
         window.alert(`The word was ${word}`);
+        window.location.reload();
     });
     });
     
